@@ -12,61 +12,76 @@ class MediaTest {
 
 	@Test
 	void FiveSeconds() {
-		assertEquals(false, true);
+		Media media1 = new Media("nomeA",5);
+		String val = media1.getDurationString();
+		assertEquals("0:00:05", val);
 	}
 
 	@Test
 	void FiftyFiveSeconds() {
-		assertEquals(false, true);
+		Media media1 = new Media("nomeA",55);
+		String val = media1.getDurationString();
+		assertEquals("0:00:55", val);
 	}
 
 	@Test
 	void FiveMinutesFiveSeconds() {
-		assertEquals(false, true);
+		Media media1 = new Media("nomeA",305);
+		String val = media1.getDurationString();
+		assertEquals("0:05:05", val);
 	}
 
 	@Test
 	void FiveMinutesFiftyFiveSeconds() {
-		assertEquals(false, true);
-	}
+		Media media1 = new Media("nomeA",355);
+		String val = media1.getDurationString();
+		assertEquals("0:05:55", val);	}
 
 	@Test
 	void FiftyFiveMinutesFiveSeconds() {
-		assertEquals(false, true);
-	}
+		Media media1 = new Media("nomeA",3305);
+		String val = media1.getDurationString();
+		assertEquals("0:55:05", val);	}
 
 	@Test
 	void FiftyFiveMinutesFiftyFiveSeconds() {
-		assertEquals(false, true);
-	}
+		Media media1 = new Media("nomeA",3355);
+		String val = media1.getDurationString();
+		assertEquals("0:55:55", val);	}
 
 	@Test
 	void OneHourFiveSeconds() {
-		assertEquals(false, true);
-	}
+		Media media1 = new Media("nomeA",3605);
+		String val = media1.getDurationString();
+		assertEquals("1:00:05", val);	}
 
 	@Test
 	void OneHourFiftyFiveSeconds() {
-		assertEquals(false, true);
-	}
+		Media media1 = new Media("nomeA",3655);
+		String val = media1.getDurationString();
+		assertEquals("1:00:55", val);	}
 
 	@Test
 	void OneHourFiveMinutesFiveSeconds() {
-		assertEquals(false, true);
-	}
+		Media media1 = new Media("nomeA",3905);
+		String val = media1.getDurationString();
+		assertEquals("1:05:05", val);	}
 
 	@Test
 	void OneHourFiveMinutesFiftyFiveSeconds() {
-		assertEquals(false, true);
-	}
+		Media media1 = new Media("nomeA",3955);
+		String val = media1.getDurationString();
+		assertEquals("1:05:55", val);	}
 
 	@Test
 	void OneHourFiftyFiveMinutesFiveSeconds() {
-		assertEquals(false, true);
-	}
+		Media media1 = new Media("nomeA",6905);
+		String val = media1.getDurationString();
+		assertEquals("1:55:05", val);	}
 
 	@Test
 	void OneHourFiftyFiveMinutesFiftyFiveSeconds() {
-		assertEquals(false, true);
-	}
+		Media media1 = new Media("nomeA",6955);
+		String val = media1.getDurationString();
+		assertEquals("1:55:55", val);	}
 }
